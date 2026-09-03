@@ -291,7 +291,7 @@ nav ul li a:hover {
 }
 
 .quantity_control .cartBtn a {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .quantity_control .cartBtn:hover {
