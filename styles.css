@@ -419,8 +419,16 @@ nav ul li a:hover {
 }
 
 .chillout_way_container .chillout_way_video {
-    max-width: 60%;
+    width: 100%;
+    max-width: 500px;
 }
+
+.chillout_way_container .chillout_way_video iframe {
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+}
+
 
 .chillout_way_container .chillout_way_video h4 {
     font-size: 18px;
