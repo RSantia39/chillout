@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="order_styles.css" />
+    <!-- Box Icon Link for Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Chillout - Refreshing Smoothies</title>
+  </head>
+  <body>
+    <!--Header and Navbar Section-->
+    <header>
+      <nav id="navbar" class="navbar">
+        <img
+          class="logo"
+          src="images/chillout-logo.png"
+          alt="Chillout store logo"
+        />
+
+        <button class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul id="menu-items" class="menu-items">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="order" class="order">
+      <div class="section_container">
+        <h3>Complete Your Order</h3>
+        <div class="order_box">
+          <div class="order_container">
+            <div class="order_card">
+              <img src="images/stawberry-bliss.png" alt="Strawberry Bliss" />
+              <h4>Strwberry Bliss</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn1" class="decrementBtn" type="button">
+                  −
+                </button>
+                <span id="quantity1" class="quantity">0</span>
+                <button id="incrementBtn1" class="incrementBtn" type="button">
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="order_card">
+              <img src="images/mango-chill.png" alt="Mango Chill" />
+              <h4>Mango Chill</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn2" class="decrementBtn">−</button>
+                <span id="quantity2" class="quantity">0</span>
+                <button id="incrementBtn2" class="incrementBtn">+</button>
+              </div>
+            </div>
+            <div class="order_card">
+              <img src="images/blueberry-burst.png" alt="Blueberry Burst" />
+              <h4>Blueberry Burst</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn3" class="decrementBtn">−</button>
+                <span id="quantity3" class="quantity">0</span>
+                <button id="incrementBtn3" class="incrementBtn">+</button>
+              </div>
+            </div>
+
+            <div class="order_card">
+              <img src="images/banana-cream.png" alt="Banana Cream" />
+              <h4>Banana Cream</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn" class="decrementBtn">−</button>
+                <span id="quantity" class="quantity">0</span>
+                <button id="incrementBtn" class="incrementBtn">+</button>
+              </div>
+            </div>
+            <div class="order_card">
+              <img src="images/avocado-dream.png" alt="Avocado Dream" />
+              <h4>Avocado Dream</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn" class="decrementBtn">−</button>
+                <span id="quantity" class="quantity">0</span>
+                <button id="incrementBtn" class="incrementBtn">+</button>
+              </div>
+            </div>
+            <div class="order_card">
+              <img src="images/pineapple-splash.png" alt="Pineapple Splash" />
+              <h4>Pineapple Splash</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn" class="decrementBtn">−</button>
+                <span id="quantity" class="quantity">0</span>
+                <button id="incrementBtn" class="incrementBtn">+</button>
+              </div>
+            </div>
+
+            <div class="order_card">
+              <img src="images/mixed-berry.png" alt="Mixed Berry" />
+              <h4>Mixed Berry</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn" class="decrementBtn">−</button>
+                <span id="quantity7" class="quantity">0</span>
+                <button id="incrementBtn" class="incrementBtn">+</button>
+              </div>
+            </div>
+            <div class="order_card">
+              <img src="images/peach-paradise.png" alt="Peach Paradise" />
+              <h4>Peach Paradise</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn" class="decrementBtn">−</button>
+                <span id="quantity" class="quantity">0</span>
+                <button id="incrementBtn" class="incrementBtn">+</button>
+              </div>
+            </div>
+            <div class="order_card">
+              <img src="images/choco-chill.png" alt="Choco Chill" />
+              <h4>Choco Chill</h4>
+              <p>&#8369;129.00</p>
+              <div class="quantity_control">
+                <button id="decrementBtn" class="decrementBtn">−</button>
+                <span id="quantity9" class="quantity">0</span>
+                <button id="incrementBtn" class="incrementBtn">+</button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="order_text">
+            <p>Price: ₱<span id="price"></span></p>
+            <p>Shipping fee: ₱30.00</p>
+            <p>Total: ₱<span id="total"></span></p>
+          </div>
+          <hr />
+          <button id="resetBtn" type="button">Reset Order</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer">
+      <div class="section_container">
+        <h3>Customer Information</h3>
+        <div class="customer_box">
+          <div class="customer_container">
+            <div class="customer_form">
+              <span id="statusMessage"></span>
+              <!--Display form details status-->
+              <div class="field">
+                <label for="userNameInput">Full Name</label>
+                <span id="userNameError" class="error"></span
+                ><input
+                  type="text"
+                  id="userNameInput"
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="emailInput">Email</label
+                ><span id="emailError" class="error"></span
+                ><input
+                  type="email"
+                  id="emailInput"
+                  placeholder="eg. email@chillout.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="numberInput">Contact Number</label
+                ><span id="numberError" class="error"></span
+                ><input
+                  type="text"
+                  id="numberInput"
+                  placeholder="11 digit mobile number"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="addressInput">Address</label>
+                <span id="addressError" class="error"></span
+                ><input
+                  type="text"
+                  id="addressInput"
+                  placeholder="Enter your delivery address"
+                  required
+                />
+              </div>
+              <button class="button" id="submitBtn">Place Your Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+      <div class="section_container">
+        <div class="footer_section">
+          <div class="contact_us">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span>1538 Paco, Manila, Philippines</span>
+              </li>
+              <li>
+                <i class="bx bxs-phone-call"></i> <span>+63 912 345 0000</span>
+              </li>
+              <li>
+                <i class="bx bxs-time-five"></i>
+                <span>Mon-Sat : 9:00 AM - 7:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="follow_us">
+            <h4>Follow Us</h4>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Chillout. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Javascript file link -->
+    <script src="js/order_script.js"></script>
+  </body>
+</html>
